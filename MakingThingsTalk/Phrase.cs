@@ -4,9 +4,9 @@ using System.Text;
 
 namespace MakingThingsTalk
 {
-    public interface ISpeak
+    public class Phrase
     {
-        void SaySomething(List<string> phrases);
+        public string phrase { get; set; }
 
     }
 }
