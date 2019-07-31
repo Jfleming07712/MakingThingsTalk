@@ -55,10 +55,12 @@ namespace MakingThingsTalk
             speakers[1] = gwd;
             speakers[2] = trump;
 
-            foreach (string phrase in catPhrases)
-            {
-                phrase.SaySomething();
-            }
+            
+            cat.SaySomething(catPhrases);
+
+            trump.SaySomething(trumpPhrases);
+
+            gwd.SaySomething(gwdPhrases);
         }
     }
 }

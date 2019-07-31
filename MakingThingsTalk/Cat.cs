@@ -7,9 +7,10 @@ namespace MakingThingsTalk
 {
     public class Cat : SmartThings, ISpeak
     {
-        public void SaySomething()
+        public void SaySomething(List<string> catPhrases)
         {
-            Console.WriteLine("Meow Meow Meow");
+            foreach (var phrase in catPhrases)
+                Console.WriteLine(phrase);
         }
     }
 

@@ -6,11 +6,10 @@ namespace MakingThingsTalk
 {
     public class GorillaWithDowns : SmartThings, ISpeak
     {
-        public void SaySomething(List<string> phrases)
+        public void SaySomething(List<string> gwdPhrases)
         {
-            foreach(phrase in phrases)
-
-            Console.WriteLine("I can haz babY tRumP?!");
+            foreach (var phrase in gwdPhrases)
+                Console.WriteLine(phrase);
         }
     }
 }

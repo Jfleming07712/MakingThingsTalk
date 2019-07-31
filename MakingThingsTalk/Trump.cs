@@ -6,9 +6,10 @@ namespace MakingThingsTalk
 {
     public class Trump : ISpeak
     {
-        public void SaySomething()
+        public void SaySomething(List<string> trumpPhrases)
         {
-            Console.WriteLine("TWEET TWEET I am a fucking moron TWEET TWEET");
+            foreach (var phrase in trumpPhrases)
+                Console.WriteLine(phrase);
         }
     }
     
